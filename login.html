@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Serenity Hotel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <div class="login-wrap">
+    <div class="login-visual">
+      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&q=80" alt="Luxury hotel room">
+      <div class="login-visual-overlay"></div>
+      <div class="login-visual-text">
+        <h1>Serenity Hotel</h1>
+        <p>Sign in to manage your bookings and enjoy exclusive offers.</p>
+      </div>
+    </div>
+    <div class="login-form-wrap">
+      <div class="login-form-inner">
+        <a href="index.html" class="login-back">← Back to home</a>
+        <h2>Welcome back</h2>
+        <p class="login-sub">Enter your details to sign in.</p>
+        <form id="login-form" class="auth-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+          <label class="checkbox-wrap">
+            <input type="checkbox" name="remember" id="login-remember">
+            <span>Remember me</span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </form>
+        <p class="login-signup">
+          Don't have an account? <a href="signup.html" id="signup-link">Create one</a>
+        </p>
+        <p class="login-demo">Demo: use any email & password to sign in.</p>
+      </div>
+    </div>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>

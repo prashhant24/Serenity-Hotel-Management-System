@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenity Hotel — Room Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Serenity Hotel</a>
+      <ul class="nav-links">
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#book">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-auth">
+          <span class="user-welcome hidden" id="user-welcome"></span>
+          <a href="login.html" class="btn btn-ghost btn-login" id="nav-login">Log in</a>
+          <button type="button" class="btn btn-ghost btn-sm hidden" id="nav-logout">Log out</button>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80" alt="Hotel lobby">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content animate-in">
+        <p class="hero-tag">Luxury & Comfort</p>
+        <h1>Your Stay,<br>Unforgettable</h1>
+        <p class="hero-desc">Book your perfect room and enjoy premium amenities.</p>
+        <a href="#book" class="btn btn-primary btn-hero">Book a Room</a>
+      </div>
+    </section>
+
+    <section class="features-bar">
+      <div class="container">
+        <div class="features-list">
+          <div class="feature-item">
+            <span class="feature-icon">◇</span>
+            <span>Free WiFi</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">◇</span>
+            <span>24/7 Concierge</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">◇</span>
+            <span>Spa & Pool</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">◇</span>
+            <span>Best Price</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+      <div class="container">
+        <h2 class="section-title">Our Rooms</h2>
+        <p class="section-sub">Choose from our curated selection of rooms.</p>
+        <div class="room-grid">
+          <article class="room-card animate-card" data-room="standard" data-price="89">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Standard Room">
+              <span class="room-badge">Popular</span>
+            </div>
+            <div class="room-info">
+              <h3>Standard Room</h3>
+              <p>Cozy and comfortable with essential amenities. Perfect for short stays.</p>
+              <p class="room-price">$89 <span>/ night</span></p>
+              <button class="btn btn-outline book-room-btn" data-room="Standard Room" data-price="89">Book Now</button>
+            </div>
+          </article>
+          <article class="room-card animate-card" data-room="deluxe" data-price="149">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80" alt="Deluxe Room">
+            </div>
+            <div class="room-info">
+              <h3>Deluxe Room</h3>
+              <p>Spacious with city view, premium bedding, and mini bar.</p>
+              <p class="room-price">$149 <span>/ night</span></p>
+              <button class="btn btn-outline book-room-btn" data-room="Deluxe Room" data-price="149">Book Now</button>
+            </div>
+          </article>
+          <article class="room-card animate-card" data-room="suite" data-price="249">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Suite">
+              <span class="room-badge luxury">Luxury</span>
+            </div>
+            <div class="room-info">
+              <h3>Executive Suite</h3>
+              <p>Luxury suite with living area, king bed, and panoramic views.</p>
+              <p class="room-price">$249 <span>/ night</span></p>
+              <button class="btn btn-outline book-room-btn" data-room="Executive Suite" data-price="249">Book Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Hotel & Rooms</h2>
+        <p class="section-sub">A glimpse of Serenity Hotel.</p>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item-tall">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80" alt="Hotel exterior">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Room interior">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80" alt="Hotel lobby">
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Pool area">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600&q=80" alt="Bedroom">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="booking">
+      <div class="container">
+        <h2 class="section-title">Book Your Stay</h2>
+        <form id="booking-form" class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkin">Check-in</label>
+              <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-out</label>
+              <input type="date" id="checkout" name="checkout" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="room-type">Room Type</label>
+              <select id="room-type" name="roomType" required>
+                <option value="">Select room</option>
+                <option value="Standard Room" data-price="89">Standard Room — $89/night</option>
+                <option value="Deluxe Room" data-price="149">Deluxe Room — $149/night</option>
+                <option value="Executive Suite" data-price="249">Executive Suite — $249/night</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <input type="number" id="guests" name="guests" min="1" max="6" value="1" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" required>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg">Confirm Booking & Generate Bill</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="bill-section" class="bill-section hidden">
+      <div class="container">
+        <div class="bill-paper" id="bill-paper">
+          <div class="bill-header">
+            <h1>Serenity Hotel</h1>
+            <p>Booking Confirmation & Bill</p>
+          </div>
+          <div class="bill-body">
+            <div class="bill-row">
+              <span>Booking ID</span>
+              <strong id="bill-id">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Guest Name</span>
+              <strong id="bill-name">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Email</span>
+              <strong id="bill-email">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Phone</span>
+              <strong id="bill-phone">—</strong>
+            </div>
+            <div class="bill-divider"></div>
+            <div class="bill-row">
+              <span>Room Type</span>
+              <strong id="bill-room">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Check-in</span>
+              <strong id="bill-checkin">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Check-out</span>
+              <strong id="bill-checkout">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Nights</span>
+              <strong id="bill-nights">—</strong>
+            </div>
+            <div class="bill-row">
+              <span>Guests</span>
+              <strong id="bill-guests">—</strong>
+            </div>
+            <div class="bill-divider"></div>
+            <div class="bill-row">
+              <span>Room charges</span>
+              <span id="bill-room-total">$0</span>
+            </div>
+            <div class="bill-row">
+              <span>Tax (10%)</span>
+              <span id="bill-tax">$0</span>
+            </div>
+            <div class="bill-row total">
+              <span>Total Amount</span>
+              <strong id="bill-total">$0</strong>
+            </div>
+          </div>
+          <div class="bill-footer">
+            <p>Thank you for choosing Serenity Hotel. Have a pleasant stay!</p>
+            <p class="bill-date" id="bill-date"></p>
+          </div>
+        </div>
+        <div class="bill-actions">
+          <button type="button" class="btn btn-primary" id="print-bill">Print Bill</button>
+          <button type="button" class="btn btn-outline" id="new-booking">New Booking</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p>123 Hospitality Lane, City — Phone: +1 234 567 8900 — hello@serenityhotel.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; Serenity Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
